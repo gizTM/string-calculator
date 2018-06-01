@@ -1,3 +1,4 @@
+const Calculator = require('../Calculator');
 const chai = require('chai');
 
 const { expect } = chai;
@@ -18,6 +19,16 @@ function exampleBehaviors() {
   it('should be equal 2', itAlwaysBe2);
 }
 
+function itShouldBeZero() {
+  cal1 = new Calculator();
+  expect(cal1.calculate('')).to.be.equal(0);
+}
+
+function testEmptyString() {
+  it('should be zero', itShouldBeZero);
+}
+
 // Start Describe
 describe('Example', exampleBehaviors);
 
+describe('Empty string should return zero',testEmptyString);
