@@ -1,7 +1,11 @@
 class Calculator {
-    calculate (str) {
-        if (str === '') return 0;
-    }
+  constructor() {
+    this.str = '';
+  }
+  calculate(str) {
+    this.str = str;
+    return this.str.length;
+  }
 }
 
-module.exports = Calculator
+module.exports = Calculator;

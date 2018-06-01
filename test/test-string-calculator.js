@@ -20,7 +20,7 @@ function exampleBehaviors() {
 }
 
 function itShouldBeZero() {
-  cal1 = new Calculator();
+  const cal1 = new Calculator();
   expect(cal1.calculate('')).to.be.equal(0);
 }
 
@@ -30,5 +30,4 @@ function testEmptyString() {
 
 // Start Describe
 describe('Example', exampleBehaviors);
-
-describe('Empty string should return zero',testEmptyString);
+describe('Empty string should return zero', testEmptyString);
