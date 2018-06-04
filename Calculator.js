@@ -2,7 +2,7 @@ class Calculator {
   constructor() {
     this.str = '';
   }
-  
+
   calculate(str) {
     this.str = str;
     if (str === '') return 0;
