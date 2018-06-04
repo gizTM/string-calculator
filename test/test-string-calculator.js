@@ -27,6 +27,7 @@ function itShouldBeNumber() {
 function itShouldBeSum() {
   expect(cal1.calculate('1,2')).to.be.equal(3);
   expect(cal1.calculate('1\n2')).to.be.equal(3);
+  expect(cal1.calculate('4,5,10')).to.be.equal(19);
 }
 
 // Start Example Behaviors
